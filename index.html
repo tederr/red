@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Color Betting Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>🎡 3D Color Betting Game 🎨</h1>
+
+    <div id="balance">Loading...</div>
+
+    <div class="game-container">
+        <div class="wheel-container">
+            <div class="wheel"></div>
+        </div>
+
+        <div class="betting-section">
+            <h2>Place Your Bets</h2>
+            <div class="players">
+                <div class="player">
+                    <label>P1 Bet:</label>
+                    <select id="betP1"></select>
+                </div>
+                <div class="player">
+                    <label>P2 Bet:</label>
+                    <select id="betP2"></select>
+                </div>
+                <div class="player">
+                    <label>P3 Bet:</label>
+                    <select id="betP3"></select>
+                </div>
+                <div class="player">
+                    <label>P4 Bet:</label>
+                    <select id="betP4"></select>
+                </div>
+            </div>
+            <button onclick="placeBets()">Spin & Bet</button>
+        </div>
+    </div>
+
+    <h2 id="winning-color">Winning Color: -</h2>
+
+    <div class="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard-list"></ul>
+    </div>
+
+    <audio id="spinSound" src="spin.mp3"></audio>
+    <audio id="winSound" src="win.mp3"></audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
